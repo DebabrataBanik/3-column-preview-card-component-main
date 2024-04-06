@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+:root{
+  --ff-deca: "Lexend Deca", sans-serif;
+  --ff-shoulders: "Big Shoulders Display", sans-serif;
+
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 5rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+  width: 90%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+}
+
+.card{
+  padding: 3rem;
+}
+
+.first__card{
+  background-color: var(--clr-bright-orange);
+}
+
+.second__card{
+  background-color: var(--clr-dark-cyan);
+}
+
+.third__card{
+  background-color: var(--clr-very-dark-cyan);
+}
+
+img{
+  width: 55px;
+}
+
+h1{
+  font-family: var(--ff-shoulders);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  letter-spacing: 0.03rem;
+}
+
+p{
+  font-size: 15px;
+  font-family: var(--ff-deca);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+button{
+  background-color: hsl(0, 0%, 95%);
+  font-family: var(--ff-deca);
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.first__card button{
+  color: var(--clr-bright-orange);
+  border: 2px solid var(--clr-bright-orange);
+}
+.first__card button:active{
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: var(--clr-bright-orange);
+  color: hsl(0, 0%, 95%);
+}
+
+.second__card button{
+  color: var(--clr-dark-cyan);
+  border: 2px solid var(--clr-dark-cyan);
+}
+.second__card button:active{
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: var(--clr-dark-cyan);
+  color: hsl(0, 0%, 95%);
+}
+
+.third__card button{
+  color: var(--clr-very-dark-cyan);
+  border: 2px solid var(--clr-very-dark-cyan);
+}
+.third__card button:active{
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: var(--clr-very-dark-cyan);
+  color: hsl(0, 0%, 95%);
+}
+
+
+@media (min-width: 768px){
+  .container{
+    display: flex;
+    max-width: 920px;
+  }
+
+  p{
+    margin-bottom: 5rem;
+  }
+}
